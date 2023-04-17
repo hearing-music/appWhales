@@ -1,0 +1,90 @@
+ion-content {
+    --background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(220, 252, 234, 1) 100%);
+}
+
+.ion-padding {
+    width: 100%;
+}
+
+.loginBox {
+    padding-top: 8rem;
+    width: 22rem;
+    height: 40rem;
+
+    h1 {
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        color: rgba(2, 46, 87, 1);
+    }
+
+    .toLogin {
+        margin-top: 6rem;
+        width: 22rem;
+        height: 15rem;
+
+        // ion-input.custom {
+        //     --color: #ccc;
+        //     --placeholder-color: #ccc;
+        // }
+        .phone {
+            margin: 0 15px;
+            margin-bottom: 15px;
+
+            .phoneNumber {
+                border-bottom: 2px solid #eee;
+            }
+
+            .errMessage {
+                color: red;
+            }
+
+        }
+
+
+
+
+        .password {
+            margin: 0 15px;
+            margin-bottom: 30px;
+
+            .code {
+                border-bottom: 2px solid #eee;
+                position: relative;
+
+                .getCode {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 0px;
+                    color: #1d70bd;
+                    z-index: 3;
+                    height: 30px;
+
+                    .textCenter {
+                        display: flex;
+                        justify-content: center;
+                        width: 50px;
+                    }
+                }
+            }
+
+            .CodeErrMessage {
+                color: red;
+            }
+        }
+
+        .loginBtn {
+            ion-button {
+                --background-activated: linear-gradient(135deg, rgba(255, 241, 87, 1) 0%, rgba(126, 255, 46, 0.5) 100%);
+                --background: linear-gradient(135deg, rgba(255, 241, 87, 1) 0%, rgba(126, 255, 46, 1) 100%);
+            }
+        }
+
+        .changePassword {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+    }
+}
